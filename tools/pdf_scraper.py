@@ -53,11 +53,12 @@ def get_pdf(url, pdf_name):
         print_button.click()
         time.sleep(5)  # Adjust as necessary for page load
 
-        pdf_url = driver.current_url
-        response = requests.get(pdf_url)
-        if response.status_code == 200:
-            with open(pdf_name, 'wb') as f:
-                f.write(response.content)
+        # Can't handle the pdf download page, it's not a web page
+        # pdf_url = driver.current_url
+        # response = requests.get(pdf_url)
+        # if response.status_code == 200:
+        #     with open(pdf_name, 'wb') as f:
+        #         f.write(response.content)
     except Exception as e:
         print(f"Error occurred: {e}")
     finally:
