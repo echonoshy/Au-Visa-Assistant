@@ -48,7 +48,7 @@ def get_pdf(url, pdf_name):
     try:
         driver.get(url)
         print_button = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, "ctl00_ctl00_NavigationTree_NavTreeFooterNode_ctl00_ctl00_NavigationTree_NavTreeFooterNode_FooterLegalLinks_HyperLinkPrint"))
+            EC.presence_of_element_located((By.ID, "ctlTaskbarPrintLabel"))
         )
         print_button.click()
         time.sleep(5)  # Adjust as necessary for page load
