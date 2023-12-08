@@ -45,7 +45,13 @@ if __name__ == "__main__":
     # input_directory = './pdf/studying-and-training-visas'  # Directory containing PDF files
     # output_pdf = './pdf/studying-and-training-visas.pdf'  # Path for the output merged PDF file
 
-    input_directory = './pdf/visitor-visas'  # Directory containing PDF files
-    output_pdf = './pdf/visitor-visas.pdf'  # Path for the output merged PDF file
+    # input_directory = './pdf/visitor-visas'  # Directory containing PDF files
+    # output_pdf = './pdf/visitor-visas.pdf'  # Path for the output merged PDF file
+
+    # input_directory = './pdf/working-and-skilled-visas'  # Directory containing PDF files
+    # output_pdf = './pdf/working-and-skilled-visas.pdf'  # Path for the output merged PDF file
+
+    input_directory = './pdf/au-visas'  # Directory containing PDF files
+    output_pdf = './pdf/au-visas.pdf'  # Path for the output merged PDF file
 
     merge_pdfs_in_directory(input_directory, output_pdf)
